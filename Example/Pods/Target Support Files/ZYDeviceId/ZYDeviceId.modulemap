@@ -1,0 +1,6 @@
+framework module ZYDeviceId {
+  umbrella header "ZYDeviceId-umbrella.h"
+
+  export *
+  module * { export * }
+}

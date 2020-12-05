@@ -4,6 +4,7 @@ platform :ios, '9.0'
 
 target 'ZYDeviceId_Example' do
   pod 'ZYDeviceId', :path => '../'
+  pod 'KeychainAccess', '~> 4.2.1'
 
   target 'ZYDeviceId_Tests' do
     inherit! :search_paths

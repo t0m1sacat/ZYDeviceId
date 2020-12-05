@@ -1,0 +1,32 @@
+PODS:
+  - KeychainAccess (4.2.1)
+  - Nimble (8.0.9)
+  - Quick (2.2.1)
+  - ZYDeviceId (1.0.0):
+    - KeychainAccess (~> 4.2.1)
+
+DEPENDENCIES:
+  - KeychainAccess
+  - Nimble (~> 8.0.7)
+  - Quick (~> 2.2.0)
+  - ZYDeviceId (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - KeychainAccess
+    - Nimble
+    - Quick
+
+EXTERNAL SOURCES:
+  ZYDeviceId:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  KeychainAccess: 9b07f665298d13c3a85881bd3171f6f49b8151c1
+  Nimble: 98b888285a615fd34f20e61753cf58ea1402bde4
+  Quick: f5754d69b7013f5864c29aab9ae6f0c79c5bc200
+  ZYDeviceId: 7291f2aca6c242bf0b48b3ac59fd8b88e7cba4b1
+
+PODFILE CHECKSUM: 0c063defd995b13b3161a893a4411e5eab543883
+
+COCOAPODS: 1.9.1

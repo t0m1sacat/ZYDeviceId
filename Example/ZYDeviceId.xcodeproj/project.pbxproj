@@ -32,7 +32,7 @@
 		0F0BEF235A328AC7BAAF464E /* Pods-ZYDeviceId_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYDeviceId_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZYDeviceId_Example/Pods-ZYDeviceId_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4E5F03554F6E21BDC31F48E0 /* Pods-ZYDeviceId_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYDeviceId_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ZYDeviceId_Tests/Pods-ZYDeviceId_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		58A9D2447031A332DD51EE69 /* Pods_ZYDeviceId_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZYDeviceId_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C32425AC0A5151371C9EEFE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5C32425AC0A5151371C9EEFE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ZYDeviceId_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYDeviceId_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,9 +43,9 @@
 		607FACE51AFB9204008FA782 /* ZYDeviceId_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYDeviceId_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		73E8134649248C53EE1FBE97 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		73E8134649248C53EE1FBE97 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		85D299B8412428557E6B946B /* Pods_ZYDeviceId_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZYDeviceId_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD6672FC10DBD1458441A19C /* ZYDeviceId.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZYDeviceId.podspec; path = ../ZYDeviceId.podspec; sourceTree = "<group>"; };
+		BD6672FC10DBD1458441A19C /* ZYDeviceId.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZYDeviceId.podspec; path = ../ZYDeviceId.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E913667B4C4BFB1652F6E9D1 /* Pods-ZYDeviceId_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYDeviceId_Example.release.xcconfig"; path = "Target Support Files/Pods-ZYDeviceId_Example/Pods-ZYDeviceId_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,7 +86,6 @@
 				4E5F03554F6E21BDC31F48E0 /* Pods-ZYDeviceId_Tests.debug.xcconfig */,
 				0739D2D6A7ED6D1B6E3FEB68 /* Pods-ZYDeviceId_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -270,10 +270,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ZYDeviceId_Example/Pods-ZYDeviceId_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
 				"${BUILT_PRODUCTS_DIR}/ZYDeviceId/ZYDeviceId.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZYDeviceId.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
